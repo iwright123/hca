@@ -23,7 +23,8 @@ namespace StudentPortal.Web.AddControllers
             var student = new Student
             {
                 Name = viewModel.Name,
-                Email = viewModel.Email
+                Email = viewModel.Email,
+                Phone = viewModel.Phone
             };
 
             await dbContext.Students.AddAsync(student);
@@ -56,6 +57,7 @@ namespace StudentPortal.Web.AddControllers
             {
                 student.Name = viewModel.Name;
                 student.Email = viewModel.Email;
+                student.Phone = viewModel.Phone;
 
                 await dbContext.SaveChangesAsync();
             }
