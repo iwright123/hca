@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using StudentPortal.Web.Models;
 
 public class AppDbContext : DbContext
 {
@@ -7,5 +8,5 @@ public class AppDbContext : DbContext
 
     }
 
-    public DbSet<Student>? Students { get; set; }
+    public DbSet<Student> Students { get; set; }
 }
