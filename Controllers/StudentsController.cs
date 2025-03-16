@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudentPortal.Web.Models;
+using StudentPortal.Web.Data;
 
 namespace StudentPortal.Web.AddControllers
 {
